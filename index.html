@@ -22,14 +22,33 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
         <div class="menu-border">
             <img src="/images/icons/border-top.svg" alt="Navigation top border" style="display: block; width: 100%; height: auto;" />
         </div>
     </nav>
 
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-border"></div>
+        <ul>
+            <li><a href="#" onclick="closeMobileMenu()">Home</a></li>
+            <li><a href="#" onclick="closeMobileMenu()">Games</a></li>
+            <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="contact.html" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+
     <header>
         <div class="visual">
+            <!-- <img src="images/tirkaheader.jpg" alt=""> -->
             <video src="images/mychef.mp4" autoplay muted loop playsinline></video>
         </div>
         <div class="details">
