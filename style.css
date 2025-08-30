@@ -931,3 +931,659 @@ header .details .btns button:hover a{
     justify-content: center;
     align-items: center;
 }
+
+/* =================================
+   RESPONSIVE MEDIA QUERIES
+   ================================= */
+
+/* Tablet (768px - 991px) */
+@media screen and (max-width: 991px) {
+    .navbar {
+        padding: 0 20px;
+    }
+    
+    .navbar .logo {
+        width: 200px;
+    }
+    
+    .navbar .links {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex !important;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    header {
+        min-height: 70vh;
+    }
+    
+    header .details img {
+        width: 500px;
+    }
+    
+    header .details h1 {
+        font-size: 50px;
+    }
+    
+    header .details p {
+        font-size: 25px;
+    }
+    
+    .about-us .description {
+        width: 90%;
+        font-size: 20px;
+    }
+    
+    .about-us .visuals {
+        width: 90%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .about-us .visuals .img-container {
+        width: 250px;
+        height: 150px;
+    }
+    
+    .milestone .timeline {
+        flex-direction: column;
+        gap: 30px;
+        border-top: none;
+        border-left: 3px solid #ffffff;
+        padding-left: 30px;
+        align-items: flex-start;
+    }
+    
+    .milestone .timeline-item::before {
+        top: 20px;
+        left: -38px;
+        transform: none;
+    }
+    
+    .timeline-content {
+        margin-top: 0;
+        width: 250px;
+    }
+    
+    .games .items {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+    
+    .games .items .item {
+        width: 90%;
+        height: 350px;
+    }
+    
+    .games .items .item:first-child {
+        grid-row: span 1;
+        height: 400px;
+    }
+    
+    .team .members {
+        justify-content: center;
+    }
+    
+    .team .members .member {
+        width: 300px;
+        height: 250px;
+    }
+    
+    .team .members .member-more {
+        min-width: 320px;
+        height: 90px;
+    }
+    
+    .footer .social-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer .social-links .title {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer .social-links .links {
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: repeat(4, 80px);
+    }
+    
+    .footer .social-links .links .link {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .footer .social-links .links .link a {
+        font-size: 35px;
+    }
+    
+    .footer .contact-area {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    
+    .footer .contact-area .title {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer .contact-area .text-area {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .footer .contact-area .text-area input,
+    .footer .contact-area .text-area textarea {
+        width: 80%;
+    }
+}
+
+/* Mobile Large (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .navbar .logo {
+        width: 150px;
+    }
+    
+    header {
+        min-height: 60vh;
+    }
+    
+    header .details img {
+        width: 350px;
+    }
+    
+    header .details h1 {
+        font-size: 40px;
+    }
+    
+    header .details p {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .about-us .title h1 {
+        font-size: 35px;
+    }
+    
+    .about-us .description {
+        font-size: 18px;
+        text-align: left;
+        padding: 0 20px;
+    }
+    
+    .about-us .visuals .img-container {
+        width: 200px;
+        height: 120px;
+    }
+    
+    .milestone .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline-content {
+        width: 200px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 16px;
+    }
+    
+    .timeline-content p {
+        font-size: 12px;
+    }
+    
+    .games .title h1 {
+        font-size: 35px;
+    }
+    
+    .games .items .item .details h1 {
+        font-size: 22px;
+    }
+    
+    .games .items .item .details p {
+        font-size: 16px;
+    }
+    
+    .games .items .item:first-child .details h1 {
+        font-size: 28px;
+    }
+    
+    .games .items .item:first-child .details p {
+        font-size: 18px;
+    }
+    
+    .games .items .item .visual .visual-btn {
+        width: 200px;
+        height: 60px;
+    }
+    
+    .games .items .item .visual .visual-btn a {
+        font-size: 24px;
+    }
+    
+    .team .title h1 {
+        font-size: 35px;
+    }
+    
+    .team .members .member {
+        width: 280px;
+        height: 230px;
+    }
+    
+    .team .members .member .detail h1 {
+        font-size: 20px;
+    }
+    
+    .team .members .member .detail p {
+        font-size: 16px;
+    }
+    
+    .gallery .title h1 {
+        font-size: 35px;
+    }
+    
+    .carousel-container {
+        height: 150px;
+    }
+    
+    .carousel .carousel-item {
+        min-width: 250px;
+    }
+    
+    .footer .social-links .title h1 {
+        font-size: 25px;
+    }
+    
+    .footer .social-links .links {
+        grid-template-columns: repeat(3, 70px);
+    }
+    
+    .footer .social-links .links .link {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .footer .contact-area .title h1 {
+        font-size: 25px;
+    }
+}
+
+/* Mobile Small (320px - 575px) */
+@media screen and (max-width: 575px) {
+    .navbar {
+        height: 80px;
+        padding: 0 15px;
+    }
+
+    nav .menu-border{
+        top: 80px;
+    }
+
+    header {
+        margin-top: 80px;
+        min-height: 50vh;
+    }
+    
+    header .details img {
+        width: 280px;
+    }
+    
+    header .details h1 {
+        font-size: 30px;
+    }
+    
+    header .details p {
+        font-size: 16px;
+    }
+    
+    header .details .drop-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .about-us {
+        padding-top: 100px;
+    }
+    
+    .about-us .title h1 {
+        font-size: 28px;
+    }
+    
+    .about-us .description {
+        font-size: 16px;
+    }
+    
+    .about-us .visuals {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .about-us .visuals .img-container {
+        width: 250px;
+        height: 150px;
+    }
+    
+    .milestone .timeline {
+        padding-left: 15px;
+    }
+    
+    .timeline-content {
+        width: 180px;
+        padding: 10px;
+    }
+    
+    .games .items .item {
+        height: 300px;
+    }
+    
+    .games .items .item:first-child {
+        height: 350px;
+    }
+    
+    .games .items .item .visual .visual-btn {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .games .items .item .visual .visual-btn a {
+        font-size: 18px;
+    }
+    
+    .team .members .member {
+        width: 250px;
+        height: 200px;
+    }
+    
+    .team .members .member-more {
+        min-width: 250px;
+        height: 80px;
+    }
+    
+    .team .members .member-more button a {
+        font-size: 24px;
+    }
+    
+    .carousel-container {
+        height: 120px;
+    }
+    
+    .carousel .carousel-item {
+        min-width: 200px;
+    }
+    
+    .footer .social-links .title h1 {
+        font-size: 20px;
+    }
+    
+    .footer .social-links .title p {
+        font-size: 16px;
+    }
+    
+    .footer .social-links .links {
+        grid-template-columns: repeat(3, 60px);
+        gap: 10px;
+    }
+    
+    .footer .social-links .links .link {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .footer .social-links .links .link a {
+        font-size: 25px;
+    }
+    
+    .footer .contact-area .title h1 {
+        font-size: 20px;
+    }
+    
+    .footer .contact-area .text-area input,
+    .footer .contact-area .text-area textarea {
+        width: 90%;
+        margin: 10px;
+    }
+    
+    .footer .contact-area .text-area button {
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+        margin: 5px 10px;
+    }
+    
+    #about {
+        scroll-margin-top: 90px;
+    }
+}
+
+/* Extra Small Mobile (320px and below) */
+@media screen and (max-width: 320px) {
+    .navbar .logo {
+        width: 120px;
+    }
+
+    nav .menu-border{
+        top: 80px;
+    }
+
+    header .details img {
+        width: 250px;
+    }
+
+    .about-us .visuals {
+        margin: 30px 0;
+    }
+    
+    .about-us .visuals .img-container {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .timeline-content {
+        width: 160px;
+    }
+    
+    .team .members .member {
+        width: 220px;
+        height: 180px;
+    }
+    
+    .carousel .carousel-item {
+        min-width: 180px;
+    }
+}
+
+
+/* =================================
+   HAMBURGER MENU STYLES
+   ================================= */
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+    transition: 0.4s;
+    transform-origin: center;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+    background-color: #f6bb19;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+    background-color: #f6bb19;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+    z-index: 999;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu ul li {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.mobile-menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+    padding: 20px;
+    transition: 0.4s all;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile-menu ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(246, 187, 25, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.mobile-menu ul li:hover a::before {
+    left: 100%;
+}
+
+.mobile-menu ul li:hover a {
+    color: #f6bb19;
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(246, 187, 25, 0.5);
+}
+
+.mobile-menu ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #f6bb19, #1769FF);
+    transition: width 0.4s ease;
+}
+
+.mobile-menu ul li:hover::after {
+    width: 80%;
+}
+
+/* Mobile Menu Close Area */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+}
+
+/* Mobile Menu Border */
+.mobile-menu-border {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #f6bb19, #1769FF, #f6bb19);
+    animation: borderGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes borderGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(246, 187, 25, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(23, 105, 255, 0.5);
+    }
+}
+
+/* Disable body scroll when mobile menu is active */
+body.mobile-menu-open {
+    overflow: hidden;
+}
+
+/* Mobile menu adjustments for smaller screens */
+@media screen and (max-width: 575px) {
+    .mobile-menu {
+        top: 80px;
+        height: calc(100vh - 80px);
+    }
+    
+    .mobile-menu ul li a {
+        font-size: 28px;
+        padding: 15px;
+    }
+}
