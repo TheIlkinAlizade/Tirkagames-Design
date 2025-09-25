@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"><img src="images/icons/logo.png" alt=""></div>
+    </div>    
+
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/icons/logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-border">
+            <img src="/images/icons/border-top.svg" alt="Navigation top border" style="display: block; width: 100%; height: auto;" />
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-border"></div>
+        <ul>
+            <li><a href="#" onclick="closeMobileMenu()">Home</a></li>
+            <li><a href="#" onclick="closeMobileMenu()">Games</a></li>
+            <li><a href="about.html" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="contact.html" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="visual">
+            <img src="images/memberlead.jpg" alt="">
+            <!-- <video src="images/mychef.mp4" autoplay muted loop playsinline></video> -->
+        </div>
+        <div class="details">
+            <!-- <img src="images/member.jpg" alt=""> -->
+            <button class="drop-btn">
+                <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+            </button>
+        </div>
+    </header>
+
+    <div class="about-us" id="about">
+        <div class="title">
+            <h1>Game Designer</h1>
+        </div>
+        <div class="description">
+            <p>Salam, biz Tırka Studio olaraq rəsmi şəkildə fəaliyyətə başladıq!   25–27 aprel 2025 tarixlərində keçirilən Gamepons GameJam Vol.3-də 3-cü yer qazandıq. 🥉  Hazırda üzərində işlədiyimiz oyunları tezliklə sizinlə paylaşacağıq.  Eyni zamanda güclü bir community qurmaq istəyirik – yaxın zamanda Discord serverimizi, Itch.io səhifəmizi, Kickstarter kampaniyamızı və Steam profilimizi sizinlə bölüşəcəyik.</p>
+        </div>
+        <div class="description">
+            <p>Salam, biz Tırka Studio olaraq rəsmi şəkildə fəaliyyətə başladıq!   25–27 aprel 2025 tarixlərində keçirilən Gamepons GameJam Vol.3-də 3-cü yer qazandıq. 🥉  Hazırda üzərində işlədiyimiz oyunları tezliklə sizinlə paylaşacağıq.  Eyni zamanda güclü bir community qurmaq istəyirik – yaxın zamanda Discord serverimizi, Itch.io səhifəmizi, Kickstarter kampaniyamızı və Steam profilimizi sizinlə bölüşəcəyik.</p>
+        </div>
+    </div>
+
+    <div class="games">
+        <div class="title">
+            <h1>Projects</h1>
+        </div>  
+        <div class="items">
+            <div class="item">
+                <div class="visual">
+                    <img src="images/mychefhatesmebanner.png" alt="">
+                    <button class="visual-btn"><a href="https://tirkagames.itch.io/my-chef-hates-me" target="_blank"> Play Demo&nbsp;<i class="fa-solid fa-circle-chevron-right"></i></a></button>
+                </div>
+                <div class="details">
+                    <h1>My Chef Hates Me!</h1>
+                    <p>In this fast-paced kitchen brawler, two players are connected by a rope. One is an intern trying to cook a delicious meal under pressure. The other is a chef… who absolutely hates the intern.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="visual">
+                    <img src="images/doodiemooidebanner.png" alt="">
+                    <button class="visual-btn"><a href="https://tirkagames.itch.io/doodie-moodie" target="_blank"> Play Demo&nbsp;<i class="fa-solid fa-circle-chevron-right"></i></a></button>
+                </div>
+                <div class="details">
+                    <h1>Doodie Moodie</h1>
+                    <p>The "Doodie Moodie" game is a puzzle game where in an absurd universe, a human is taken by aliens and crowned as their king, now trying to solve their problems by ridiculous ways which work but it should not.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="visual">
+                    <img src="images/tiedtailsbanner.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h1>Tied Tails</h1>
+                    <p>Co-Op Pixel Art Platformer Game, Coming Soon.</p>
+                </div>
+            </div>                        
+        </div>
+    </div>
+
+    <div class="team">
+        <div class="title">
+            <h1>Other Members</h1>
+        </div>
+        <div class="members">
+            <div class="member">
+                <div class="visual">
+                    <img src="images/member.jpg" alt="">
+                </div>
+                <div class="detail">
+                    <h1>Nurkhan Guluyev</h1>
+                    <p>Artist/Level Designer</p>
+                </div>
+            </div>
+            <div class="member">
+                <div class="visual">
+                    <img src="images/member1.jpg" alt="">
+                </div>
+                <div class="detail">
+                    <h1>Ilaza Javadova</h1>
+                    <p>Concept Artist/Animator</p>
+                </div>
+            </div>
+            <div class="member">
+                <div class="visual">
+                    <img src="images/member2.jpg" alt="">
+                </div>
+                <div class="detail">
+                    <h1>Ilkin Alizade</h1>
+                    <p>Game Developer</p>
+                </div>
+            </div>            
+            <div class="member-more">
+                <button><a href="#">More About Our Team</a></button>
+            </div>                                                     
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="menu-border">
+            <img src="/images/icons/border-bottom.svg" alt="Navigation top border" style="display: block; width: 100%; height: auto;" />
+        </div>        
+        <div class="social-links">
+            <div class="title">
+                <h1>Join our Discord, follow us on Twitter, and get involved in our community.</h1>
+                <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;Email: tirkagames@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Phone: +994 55 514 28 50</p>
+            </div>
+            <div class="links">
+                <div class="link">
+                    <a href="https://www.youtube.com/@tirkagames" target="_blank" class="fa-brands fa-youtube"></a>
+                </div>
+                <div class="link">
+                    <a href="https://www.instagram.com/tirkagames/" target="_blank" class="fa-brands fa-instagram"></a>
+                </div>
+                <div class="link">
+                    <a href="https://www.linkedin.com/company/tirka-studio/" target="_blank" class="fa-brands fa-linkedin"></a>
+                </div>
+                <div class="link">
+                    <a href="#" target="_blank" class="fa-brands fa-facebook"></a>
+                </div>     
+                <div class="link">
+                    <a href="#" target="_blank" class="fa-brands fa-x-twitter"></a>
+                </div>    
+                <div class="link">
+                    <a href="#" target="_blank" class="fa-brands fa-discord"></a>
+                </div>    
+                <div class="link">
+                    <a href="#" target="_blank" class="fa-brands fa-threads"></a>
+                </div>            
+                <div class="link">
+                    <a href="#" target="_blank" class="fa-brands fa-steam"></a>
+                </div>       
+               <div class="link">
+                    <a href="https://tirkagames.itch.io/" target="_blank" class="fa-brands fa-itch-io"></a>
+                </div>      
+               <div class="link">
+                    <a href="#" target="_blank" class="fa-brands fa-patreon"></a>
+                </div>      
+               <div class="link">
+                    <a href="#" target="_blank" class="fa-brands fa-behance"></a>
+                </div>      
+               <div class="link">
+                    <a href="#" target="_blank" class="fa-brands fa-kickstarter"></a>
+                </div>                                                                                                      
+            </div>
+        </div>
+        <div class="contact-area">
+            <div class="text-area">
+                <input type="text" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+            <div class="title">
+                <h1>Join Our Newsletter Now!</h1>
+                <p>*You can Unsubsribe anytime you want!</p>
+            </div>
+        </div>
+        <div class="website-content">
+            <div class="content-inner">
+                <p>© 2025 Tirka Studio. All Rights Reserved.</p>
+                <p>Support us on <a href="#" target="_blank">Kickstarter</a>/<a href="#" target="_blank">Patreon</a></p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
