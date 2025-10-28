@@ -396,7 +396,17 @@ header .button:hover {
     text-align: start;
     opacity: 0.6;
 }
-.footer .social-links .title .presskit{
+.footer .social-links .title .btns {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 30px;
+    margin: 10px;
+    flex-direction: row;
+}
+.footer .social-links .title .btns .presskit{
     width: max-content;
     height: 100%;
     display: flex;
@@ -408,6 +418,22 @@ header .button:hover {
     text-decoration: none;
     color: white;
     background-color: #1769FF;
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px 30px;
+}
+.footer .social-links .title .btns .pitchdesk{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 10px;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    background-color: #8102cd;
     text-align: center;
     border-radius: 12px;
     padding: 10px 30px;
