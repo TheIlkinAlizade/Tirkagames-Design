@@ -201,13 +201,16 @@ header .details .btns button:hover a{
 }
 
 header .button {
-    width: 300px;
+    max-width: 300px;
     height: 150px;
     opacity: 0.3;
     transition: 0.5s all;
     scale: 1.3;
     margin: 10px;
     border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 header .button img {
     width: 100%;
@@ -582,6 +585,7 @@ header .button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 20px 0 50px 0;
 }
 .games .items .item:first-child {
     grid-row: span 2;
@@ -819,7 +823,7 @@ header .button:hover {
     width: 95%;
     min-height: 400px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 24px;
@@ -1436,7 +1440,7 @@ header .button:hover {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .hamburger span {
@@ -1605,5 +1609,14 @@ body.mobile-menu-open {
     .mobile-menu ul li a {
         font-size: 28px;
         padding: 15px;
+    }
+    header .button {
+        width: 200px;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+    }
+    header .button img {
+        width: 100%;
     }
 }
