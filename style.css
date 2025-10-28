@@ -391,10 +391,26 @@ header .button:hover {
     margin: 10px;
     flex-direction: column;
 }
-.footer .social-links .title p{
+.footer .social-links .title .p{
     font-size: 22px;
     text-align: start;
     opacity: 0.6;
+}
+.footer .social-links .title .presskit{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 10px;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    background-color: #1769FF;
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px 30px;
 }
 .footer .social-links .links{
     width: 20%;
